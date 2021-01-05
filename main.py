@@ -16,7 +16,9 @@ from bs4 import BeautifulSoup, Tag
 from tee import Tee
 
 API_URL = "https://canvas.wpi.edu"
+
 # Canvas API key
+# This is not an active key, but yours will be in approximately this format
 API_KEY = "7782~pu3VLqIb0SGVlQUhEtTlf0aWMVV02Y7WSCpWIZubhlNPRUtxsqWWOKxvVAuWICNh"
 
 DOWNLOADS_PATH = "C:\\Users\\blward\\Documents\\College\\Canvas Exports\\Downloads"
