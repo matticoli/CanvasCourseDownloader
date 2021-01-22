@@ -23,14 +23,8 @@ API_URL = "https://canvas.wpi.edu"
 API_KEY = os.getenv("CANVAS_API_KEY", "NO_API_KEY_SET")
 
 # TODO: Make this an environment variable or make this script interactive
-DOWNLOADS_PATH = "C:\\Users\\blward\\Documents\\College\\Canvas Exports\\Downloads"
+DOWNLOADS_PATH = os.getenv("DOWNLOADS_PATH", "./downloads/")
 downloads = Path(DOWNLOADS_PATH)
-
-# TODO: Write instructions
-# You need to make a new Firefox profile in about:profiles, set it as default, and
-# then make sure to click "save; always" for every new file type.
-webbrowser.register("firefox", None,
-                    webbrowser.BackgroundBrowser("C://Program Files//Mozilla Firefox//firefox.exe"))
 
 
 # TODO: Split up into multiple files for script clarity?
@@ -53,6 +47,7 @@ def move_downloaded_files(course_safe: str):
 if __name__ == '__main__':
     # Initialize a new Canvas object
     canvas = canvasapi.Canvas(API_URL, API_KEY)
+    user = canvas.get_current_user()
     courses = canvas.get_courses()
 
     already_downloaded_courses = []
