@@ -1,6 +1,6 @@
 # Course Downloader
 
-A simple tool that uses the Instructure Canvas API to download part or all of your Canvas courses.
+A simple tool that uses the Instructure Canvas API to download part or all of your Canvas courses. Contributions welcome!
 
 ## Description
 
