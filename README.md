@@ -33,6 +33,8 @@ TODO
 
 ### Executing program
 
+Program entrypoint is `src/course.py,' simplest usage should work with `python3 src/course.py` assuming environment variables are set.
+
 TODO
 * How to run the program
 * Step-by-step bullets

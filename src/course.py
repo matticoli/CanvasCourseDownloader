@@ -51,7 +51,7 @@ class Course:
 if __name__ == "__main__":
     import canvasapi
 
-    API_URL = "https://canvas.wpi.edu"
+    API_URL = os.getenv("CANVAS_API_URL", "NO_API_URL_SET")
     API_KEY = os.getenv("CANVAS_API_KEY", "NO_API_KEY_SET")
 
     canvas = canvasapi.Canvas(API_URL, API_KEY)
