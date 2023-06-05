@@ -8,6 +8,9 @@ from src.filesystem import FileSystem
 from src.module import Module
 from src.util import safe_name
 
+from dotenv import load_dotenv
+
+load_dotenv() 
 
 class Course:
     def __init__(self, canvas_course: canvasapi.course.Course, canvas_user: canvasapi.user.User, canvas_api: canvasapi.Canvas):
